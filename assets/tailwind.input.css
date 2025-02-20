@@ -28,7 +28,7 @@
 .btn-dark-blue {
   @apply py-200 px-500 rounded-4xl bg-cyan-600 font-redhat text-[1.14286rem] font-black leading-[150%];
 }
-.btn-blue {
+.btn-dark-blue:hover {
   @apply py-200 px-500 rounded-4xl bg-[#71C0D4] font-redhat text-[1.14286rem] font-black leading-[150%];
 }
 
@@ -36,7 +36,7 @@
   @apply py-200 px-500 rounded-4xl bg-purple-600 font-redhat text-[1.14286rem] font-black leading-[150%];
 }
 
-.btn-purple {
+.btn-dark-purple:hover {
   @apply py-200 px-500 rounded-4xl bg-[#B18BDD] font-redhat text-[1.14286rem] font-black leading-[150%];
 }
 

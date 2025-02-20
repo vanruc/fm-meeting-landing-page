@@ -606,12 +606,6 @@
   .z-20 {
     z-index: 20;
   }
-  .z-40 {
-    z-index: 40;
-  }
-  .z-50 {
-    z-index: 50;
-  }
   .z-auto {
     z-index: auto;
   }
@@ -822,14 +816,8 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .h-56 {
-    height: calc(var(--spacing) * 56);
-  }
   .h-1000 {
     height: var(--spacing-1000);
-  }
-  .h-\[160px\] {
-    height: 160px;
   }
   .h-screen {
     height: 100vh;
@@ -842,9 +830,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1489,9 +1474,6 @@
   .bg-cyan-600 {
     background-color: var(--color-cyan-600);
   }
-  .bg-red-200 {
-    background-color: var(--color-red-200);
-  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -1721,14 +1703,8 @@
   .font-redhat {
     font-family: var(--font-redhat);
   }
-  .text-\[0\.85714rem\] {
-    font-size: 0.85714rem;
-  }
   .text-\[1\.14286rem\] {
     font-size: 1.14286rem;
-  }
-  .text-\[2\.28571rem\] {
-    font-size: 2.28571rem;
   }
   .leading-\[110\%\] {
     --tw-leading: 110%;
@@ -1826,6 +1802,9 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
+  }
+  .text-cyan-300 {
+    color: var(--color-cyan-300);
   }
   .text-cyan-600 {
     color: var(--color-cyan-600);
@@ -1987,20 +1966,8 @@
   .scheme-only-light {
     color-scheme: only light;
   }
-  .opacity-50 {
-    opacity: 50%;
-  }
-  .opacity-60 {
-    opacity: 60%;
-  }
   .opacity-70 {
     opacity: 70%;
-  }
-  .opacity-80 {
-    opacity: 80%;
-  }
-  .opacity-90 {
-    opacity: 90%;
   }
   .mix-blend-plus-darker {
     mix-blend-mode: plus-darker;
@@ -2340,24 +2307,9 @@
       margin-top: var(--spacing-300);
     }
   }
-  .xs\:mt-400 {
-    @media (width >= 20rem) {
-      margin-top: var(--spacing-400);
-    }
-  }
   .xs\:mt-800 {
     @media (width >= 20rem) {
       margin-top: var(--spacing-800);
-    }
-  }
-  .xs\:mt-\[-2rem\] {
-    @media (width >= 20rem) {
-      margin-top: -2rem;
-    }
-  }
-  .xs\:mb-400 {
-    @media (width >= 20rem) {
-      margin-bottom: var(--spacing-400);
     }
   }
   .xs\:grid {
@@ -2380,11 +2332,6 @@
       width: 100%;
     }
   }
-  .xs\:w-xs {
-    @media (width >= 20rem) {
-      width: var(--container-xs);
-    }
-  }
   .xs\:grid-cols-2 {
     @media (width >= 20rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2398,21 +2345,6 @@
   .xs\:items-center {
     @media (width >= 20rem) {
       align-items: center;
-    }
-  }
-  .xs\:items-start {
-    @media (width >= 20rem) {
-      align-items: flex-start;
-    }
-  }
-  .xs\:justify-center {
-    @media (width >= 20rem) {
-      justify-content: center;
-    }
-  }
-  .xs\:gap-1\.5 {
-    @media (width >= 20rem) {
-      gap: calc(var(--spacing) * 1.5);
     }
   }
   .xs\:gap-200 {
@@ -2433,11 +2365,6 @@
   .xs\:gap-800 {
     @media (width >= 20rem) {
       gap: var(--spacing-800);
-    }
-  }
-  .xs\:gap-\[-2rem\] {
-    @media (width >= 20rem) {
-      gap: -2rem;
     }
   }
   .xs\:bg-cover {
@@ -2473,11 +2400,6 @@
   .xs\:pb-800 {
     @media (width >= 20rem) {
       padding-bottom: var(--spacing-800);
-    }
-  }
-  .xs\:text-center {
-    @media (width >= 20rem) {
-      text-align: center;
     }
   }
   .xs\:text-\[0\.85714rem\] {
@@ -2524,16 +2446,6 @@
   .md\:w-\[32rem\] {
     @media (width >= 48rem) {
       width: 32rem;
-    }
-  }
-  .md\:w-\[48\.57rem\] {
-    @media (width >= 48rem) {
-      width: 48.57rem;
-    }
-  }
-  .md\:w-\[xl\] {
-    @media (width >= 48rem) {
-      width: xl;
     }
   }
   .md\:w-full {
@@ -2596,26 +2508,6 @@
       font-size: 2.57143rem;
     }
   }
-  .xl\:absolute {
-    @media (width >= 80rem) {
-      position: absolute;
-    }
-  }
-  .xl\:relative {
-    @media (width >= 80rem) {
-      position: relative;
-    }
-  }
-  .xl\:top-0 {
-    @media (width >= 80rem) {
-      top: calc(var(--spacing) * 0);
-    }
-  }
-  .xl\:right-0 {
-    @media (width >= 80rem) {
-      right: calc(var(--spacing) * 0);
-    }
-  }
   .xl\:col-span-1 {
     @media (width >= 80rem) {
       grid-column: span 1 / span 1;
@@ -2656,11 +2548,6 @@
       display: inline-block;
     }
   }
-  .xl\:h-\[360px\] {
-    @media (width >= 80rem) {
-      height: 360px;
-    }
-  }
   .xl\:h-full {
     @media (width >= 80rem) {
       height: 100%;
@@ -2681,11 +2568,6 @@
       flex: 1;
     }
   }
-  .xl\:flex-none {
-    @media (width >= 80rem) {
-      flex: none;
-    }
-  }
   .xl\:grid-cols-3 {
     @media (width >= 80rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2694,11 +2576,6 @@
   .xl\:flex-row {
     @media (width >= 80rem) {
       flex-direction: row;
-    }
-  }
-  .xl\:items-end {
-    @media (width >= 80rem) {
-      align-items: flex-end;
     }
   }
   .xl\:items-start {
@@ -2711,21 +2588,6 @@
       gap: var(--spacing-400);
     }
   }
-  .xl\:object-cover {
-    @media (width >= 80rem) {
-      object-fit: cover;
-    }
-  }
-  .xl\:object-fill {
-    @media (width >= 80rem) {
-      object-fit: fill;
-    }
-  }
-  .xl\:object-right-top {
-    @media (width >= 80rem) {
-      object-position: right top;
-    }
-  }
   .xl\:py-1400 {
     @media (width >= 80rem) {
       padding-block: var(--spacing-1400);
@@ -2736,19 +2598,9 @@
       padding-top: var(--spacing-1000);
     }
   }
-  .xl\:pr-\[95\.85px\] {
-    @media (width >= 80rem) {
-      padding-right: 95.85px;
-    }
-  }
   .xl\:pb-900 {
     @media (width >= 80rem) {
       padding-bottom: var(--spacing-900);
-    }
-  }
-  .xl\:pb-\[57px\] {
-    @media (width >= 80rem) {
-      padding-bottom: 57px;
     }
   }
   .xl\:text-left {
@@ -2789,7 +2641,7 @@
   --tw-font-weight: var(--font-weight-black);
   font-weight: var(--font-weight-black);
 }
-.btn-blue {
+.btn-dark-blue:hover {
   border-radius: var(--radius-4xl);
   background-color: #71C0D4;
   padding-inline: var(--spacing-500);
@@ -2813,7 +2665,7 @@
   --tw-font-weight: var(--font-weight-black);
   font-weight: var(--font-weight-black);
 }
-.btn-purple {
+.btn-dark-purple:hover {
   border-radius: var(--radius-4xl);
   background-color: #B18BDD;
   padding-inline: var(--spacing-500);
