@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 20rem;
+  --font-redhat: "Red Hat Display", serif;
+  --color-cyan-600: #4d96a9;
+  --color-cyan-300: #8fe3f9;
+  --color-purple-600: #855fb1;
+  --color-purple-300: #d9b8ff;
+  --color-slate-900: #28283d;
+  --color-slate-600: #87879d;
+  --color-slate-300: #d1d1df;
+  --color-white: #fafafa;
+
+  --spacing-1400: 112px;
+  --spacing-1000: 80px;
+  --spacing-900: 72px;
+  --spacing-800: 64px;
+  --spacing-700: 56px;
+  --spacing-500: 40px;
+  --spacing-400: 32px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+}
+
+.btn-dark-blue {
+  @apply py-200 px-500 rounded-4xl bg-cyan-600 font-redhat text-[1.14286rem] font-black leading-[150%];
+}
+.btn-blue {
+  @apply py-200 px-500 rounded-4xl bg-[#71C0D4] font-redhat text-[1.14286rem] font-black leading-[150%];
+}
+
+.btn-dark-purple {
+  @apply py-200 px-500 rounded-4xl bg-purple-600 font-redhat text-[1.14286rem] font-black leading-[150%];
+}
+
+.btn-purple {
+  @apply py-200 px-500 rounded-4xl bg-[#B18BDD] font-redhat text-[1.14286rem] font-black leading-[150%];
+}
+
+.step-no {
+  @apply w-[56px] h-[56px] rounded-full ring-1 ring-slate-300 bg-white flex justify-center items-center font-redhat text-[1.14286rem] font-black leading-[150%];
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Meet landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/tailwind.output.css" />
+  </head>
+  <body class="bg-white">
+    <nav class="mt-1000 mx-auto mb-0 flex justify-center">
+      <img src="assets/logo.svg" alt="meet team logo" />
+    </nav>
+    <section
+      class="hero grid xs:grid-cols-2 xl:grid-cols-3 xs:gap-300 xs:mt-800 xs:pb-400 md:pb-800 xl:gap-400"
+    >
+      <!-- col 1 -->
+      <div
+        class="xs:row-start-1 overflow-hidden xl:mr-[95.85px] xl:mb-[57px] xl:text-right"
+      >
+        <img
+          class="md:h-[303px] xs:h-[160px] xl:w-auto xl:h-full w-full xs:object-cover object-right xl:inline-block"
+          src="assets/desktop/image-hero-left.png"
+          alt=""
+        />
+      </div>
+      <!-- col 2 -->
+      <div
+        class="xs:row-start-2 xl:row-start-1 xl:col-span-1 xs:col-span-2 xs:mt-300 md:mt-900 flex flex-col xs:w-[22.2rem] md:w-[32rem] xs:mx-auto xs:gap-300 items-center"
+      >
+        <h1
+          class="xs:text-[2.85714rem] text-center font-redhat xs:font-black leading-[110%] text-slate-900"
+        >
+          Group Chat for Everyone
+        </h1>
+        <p
+          class="font-redhat text-slate-600 text-[1.14286rem] font-medium leading-[150%] text-center"
+        >
+          Meet makes it easy to connect with others face-to-face virtually and
+          collaborate across any device
+        </p>
+        <div class="flex md:flex-row xs:flex-col xs:gap-200 xs:items-center">
+          <a class="inline-block btn-dark-blue text-white" href="#download"
+            >Download v1.3</a
+          >
+          <a class="inline-block btn-dark-purple text-white" href="#what"
+            >What is it?</a
+          >
+        </div>
+      </div>
+      <!-- col 3 -->
+      <div
+        class="xs:row-start-1 overflow-hidden xl:ml-[95.85px] xl:mt-[57px] xl:text-left"
+      >
+        <img
+          class="md:h-[303px] xs:h-[160px] xl:w-auto xl:h-full w-full p xs:object-cover object-left xl:inline-block"
+          src="assets/desktop/image-hero-right.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <main
+      class="main__content xs:w-[22.2rem] mx-auto flex xs:flex-col xs:gap-800 xs:pt-400 xs:pb-800 xl:pb-900 md:pt-700 md:w-full md:px-400 xl:pt-1000"
+    >
+      <!--- step no -->
+      <div class="mx-auto flex flex-col justify-center items-center">
+        <div class="w-[1px] bg-slate-300 h-1000"></div>
+        <span class="step-no text-slate-600">01</span>
+      </div>
+      <!--- image grid -->
+      <div
+        class="xs:grid xs:grid-cols-2 xs:gap-200 md:gap-300 md:grid-cols-4 xl:w-7xl xl:mx-auto"
+      >
+        <img
+          src="assets/desktop/image-woman-in-videocall.jpg"
+          alt="woman in video call"
+          class="rounded-[8px]"
+        />
+        <img
+          src="assets/desktop/image-women-videochatting.jpg"
+          alt="women in video chatting"
+          class="rounded-[8px]"
+        />
+        <img
+          src="assets/desktop/image-men-in-meeting.jpg"
+          alt="men in meeting"
+          class="rounded-[8px]"
+        />
+        <img
+          src="assets/desktop/image-man-texting.jpg"
+          alt="man texting"
+          class="rounded-[8px]"
+        />
+      </div>
+      <!--- text -->
+      <div class="flex xs:flex-col xs:gap-400 md:w-xl md:mx-auto">
+        <!-- heading -->
+        <div class="flex xs:flex-col xs:gap-200">
+          <h3
+            class="text-cyan-600 font-redhat xs:text-[0.85714rem] font-black uppercase leading-[110%] tracking-[0.28571rem] text-center md:text-[1rem] xl:text-[1.14286rem]"
+          >
+            Built for modern use
+          </h3>
+          <h2
+            class="md:mx-auto md:w-lg text-center text-slate-900 font-redhat font-black xs:text-[2.28571rem] leading-[110%] md:text-[2.57143rem] xl:text-[2.85714rem]"
+          >
+            Smarter meetings, all in one place
+          </h2>
+        </div>
+        <!-- content -->
+        <p
+          class="text-center font-redhat text-[1.14286rem] xl:text-[1.28571rem] font-medium leading-[150%] text-slate-600"
+        >
+          Send messages, share files, show your screen, and record your meetings
+          — all in one workspace. Control who can join with invite-only team
+          access, data encryption, and data export.
+        </p>
+      </div>
+    </main>
+
+    <footer class="flex xs:flex-col">
+      <!-- step no -->
+      <div
+        class="mx-auto flex flex-col justify-center items-center relative z-20 -mb-[2rem]"
+      >
+        <div class="w-[1px] bg-slate-300 h-1000"></div>
+        <span class="step-no text-slate-600">02</span>
+      </div>
+      <!-- content -->
+      <div
+        class="bg-cyan-400 xs:py-800 xl:py-1400 xs:mx-auto xs:bg-cover xs:bg-center xs:relative xs:w-full"
+        style="background-image: url(./assets/desktop/image-footer.jpg)"
+      >
+        <div class="xs:absolute xs:inset-0 bg-cyan-600 opacity-70"></div>
+        <div
+          class="flex xs:flex-col xs:items-center xs:gap-300 relative z-10 xs:w-[22.2rem] md:w-xl mx-auto xl:w-7xl xl:flex-row xl:items-start"
+        >
+          <h2
+            class="xl:flex-1 font-redhat text-white md:text-[2.57143rem] xs:text-[2.28571rem] font-black leading-[110%] text-center xl:text-left xl:gap-400"
+          >
+            Experience more together
+          </h2>
+          <p
+            class="xl:flex-1 text-white text-center font-redhat font-medium leading-[150%] xs:text-[1.14286rem] md:text-[1.14286rem] xl:text-left"
+          >
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+          <div class="xl:flex-1 inline-block xl:text-right">
+            <a class="inline-block btn-dark-purple text-white" href="#download"
+              >Download <span class="text-purple-300">v1.3</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
